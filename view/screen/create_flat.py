@@ -69,7 +69,7 @@ class Ui_create_flat(QMainWindow, object):
         self.back_btn.setStyleSheet("background-color: rgb(0, 0, 0);\n"
 "color: rgb(255, 255, 255);")
         self.back_btn.setObjectName("back_btn")
-        self.back_btn.clicked.connect(lambda: self.controller.showMainScreen())
+        self.back_btn.clicked.connect(lambda: self.controller.showMainScreen(1,2))
 
         self.calculate_btn = QtWidgets.QPushButton(self.centralwidget)
         self.calculate_btn.setGeometry(QtCore.QRect(80, 390, 171, 51))

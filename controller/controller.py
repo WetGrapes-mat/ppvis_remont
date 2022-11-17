@@ -1,5 +1,19 @@
 from view.view import View
-from model.model import Model
+from model.model import Model_U, Model_R
+
+
+class ControllerRoom:
+    def __init__(self, model):
+        self.model = model
+        self.view = View(self, self.model)
+
+    def delet_room(self, room):
+        pass
+
+    def add_room(self, room):
+        pass
+
+
 
 class Controller:
     def __init__(self, model):
@@ -15,7 +29,7 @@ class Controller:
     def showCreateFlat(self):
         self.view.show_Create_flat()
 
-    def showMainScreen(self):
+    def showMainScreen(self, password, login):
         self.view.show_MainScreen()
 
     def showSelectType(self):
@@ -27,7 +41,7 @@ class Controller:
     def showYourFlat(self):
         self.view.YourFlat()
 
-    def showPrice(self):
+    def showPrice(self, type_rep):
         self.view.PriceDialog()
 
     def showAutorizet(self):

@@ -38,14 +38,14 @@ class Ui_select_type(QMainWindow, object):
         self.Redecoration_btn.setStyleSheet("background-color: rgba(62, 132, 91, 217);\n"
 "color: rgb(255, 255, 255);")
         self.Redecoration_btn.setObjectName("Redecoration_btn")
-        self.Redecoration_btn.clicked.connect(lambda: self.controller.showPrice())
+        self.Redecoration_btn.clicked.connect(lambda: self.controller.showPrice(1))
 
         self.Overhaul_btn = QtWidgets.QPushButton(self.centralwidget)
         self.Overhaul_btn.setGeometry(QtCore.QRect(80, 320, 171, 51))
         self.Overhaul_btn.setStyleSheet("background-color: rgba(61, 131, 90, 217);\n"
 "color: rgb(255, 255, 255);")
         self.Overhaul_btn.setObjectName("Overhaul_btn")
-        self.Overhaul_btn.clicked.connect(lambda: self.controller.showPrice())
+        self.Overhaul_btn.clicked.connect(lambda: self.controller.showPrice(2))
 
         self.text = QtWidgets.QLabel(self.centralwidget)
         self.text.setGeometry(QtCore.QRect(180, 10, 131, 40))
@@ -75,7 +75,7 @@ class Ui_select_type(QMainWindow, object):
         self.Premium_btn.setStyleSheet("background-color: rgba(62, 132, 91, 217);\n"
 "color: rgb(255, 255, 255);")
         self.Premium_btn.setObjectName("Premium_btn")
-        self.Premium_btn.clicked.connect(lambda: self.controller.showPrice())
+        self.Premium_btn.clicked.connect(lambda: self.controller.showPrice(3))
 
         self.setCentralWidget(self.centralwidget)
 

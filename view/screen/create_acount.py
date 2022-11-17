@@ -71,7 +71,7 @@ class Ui_create_acount(QMainWindow, object):
         self.log_in_btn.setStyleSheet("background-color: rgba(62, 132, 91, 217);\n"
 "color: rgb(255, 255, 255);")
         self.log_in_btn.setObjectName("log_in_btn")
-        self.log_in_btn.clicked.connect(lambda: self.controller.showMainScreen())
+        self.log_in_btn.clicked.connect(lambda: self.controller.showMainScreen(1,2 ))
 
         self.setCentralWidget(self.centralwidget)
 

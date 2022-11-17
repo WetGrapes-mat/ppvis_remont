@@ -47,7 +47,7 @@ class Ui_perconal(QMainWindow, object):
         self.back_btn.setStyleSheet("background-color: rgb(0, 0, 0);\n"
 "color: rgb(255, 255, 255);")
         self.back_btn.setObjectName("back_btn")
-        self.back_btn.clicked.connect(lambda: self.controller.showMainScreen())
+        self.back_btn.clicked.connect(lambda: self.controller.showMainScreen(1,2))
 
         self.label_name = QtWidgets.QLabel(self.centralwidget)
         self.label_name.setGeometry(QtCore.QRect(50, 100, 241, 41))
